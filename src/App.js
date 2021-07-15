@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react'
+import {  useQuery, gql} from "@apollo/client";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import "./index.css"
+import Topbar from './componenets/Topbar';
+import  Sidebar from "./componenets/Sidebar";
+import Home from './componenets/Home';
+
+// const loadBugs = gql`
+// query{
+//   bugs{
+//     id
+//     name
+//     assigned
+//   }
+// }`
+
+
+function APP(){
+
+  //  const { loading, error, data } = useQuery(loadBugs);
+  //  const [dataProvider, setDataProvider] = useState()
+
+  //  useEffect(() => {
+  //    setDataProvider(data)
+  //  }, [data])
+  //  console.log(dataProvider);
+   
+   
+    return (
+      <>
+      <Topbar/>
+      <div className="container">
+        <Sidebar/>
+        <Home/>
+      </div>
+      </>     
+    )
+  
 }
 
-export default App;
+export default APP
+

@@ -1,0 +1,50 @@
+.topbar{
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.topwrapper{
+    display: flex;
+    height: 100%;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    color: darkblue;
+}
+.topright{
+    display: flex;
+    align-items: center;
+}
+.topicons{
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #555;
+    
+}
+.topiconpag{
+    position: absolute;
+    top: -5px;
+    right: 0;
+    background-color: red;
+    color: white;border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topavatar{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}

@@ -1,0 +1,9 @@
+.home{
+    flex: 4;
+    display: grid;
+    gap: 1rem;
+    align-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    justify-content: space-around;
+    padding: 20px 0;
+}

@@ -1,0 +1,68 @@
+
+.card-radius {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 0 solid transparent;
+    margin-bottom: .5rem;
+    border-radius: 10px;
+    box-shadow: 0 0.3rem 0.8rem rgb(0 0 0 / 12%);
+}
+.card-body{
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+.d-flex > h5, p {
+    color: #fff;
+    margin-bottom: 0;
+    padding: 8px ;
+    font-size: 18px;
+    margin-top: 0;
+    font-weight: 500;
+    line-height: 1.2rem;
+    word-wrap: break-word;
+}
+.ms-auto{
+    margin-left: auto;
+}
+.bx-cart{
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    line-height: inherit;
+    display: inline-block;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+}
+.progress{
+    display: flex;
+    background-color: rgb(0 0 0 / 15%);
+    overflow: hidden;
+    font-size: .75rem;
+    border-radius: .25rem;
+    height: 3px;
+}
+.progress-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #fff;
+    transition: width .6s ease;
+}
+.d-flex{
+    display: flex;
+    align-items: centre;
+}
+.d-flex p {
+    margin: 0 auto;
+}
