@@ -5,6 +5,7 @@ import "./home.css";
 import TopCard from "./TopCard";
 import Donut from "./Donut";
 import Priority from "./Priority";
+import BarOwner from "./BarOwner";
 
 const loadBugs = gql`
   query {
@@ -79,9 +80,9 @@ export default function Home() {
   ];
   if(priorityCount){
     var list5 = [
-        {name:"A", uv: priorityCount.low},
-        {name:"B", uv: priorityCount.med},
-        {name:"C", uv: priorityCount.high},
+        {name:"Low Priority", Tickets: priorityCount.low},
+        {name:"Med Priority", Tickets: priorityCount.med},
+        {name:"High Priority", Tickets: priorityCount.high},
     ]
   }
 
@@ -119,6 +120,7 @@ export default function Home() {
           <Donut deta={list3} val="Not Started" fil="#FF8042" />
           <Donut deta={list4} val="Blocked" fil="#FFBB28" />
         </div>
+        <BarOwner/>
       </div>
     </>
   );
