@@ -1,0 +1,31 @@
+.home{
+    flex: 4;
+}
+.upsection{
+    display: flex;
+    justify-content: space-between;
+}
+
+.topcardwrapper{
+    flex: 6;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: space-around;
+    padding: 20px 0;
+}
+.prioritywrapper{
+    flex: 1;
+    max-height: 300px;
+}
+.prioritywrapper > * {
+    max-height: 130px;
+    max-width: 300px;
+}
+
+.owner{
+    padding: 5px auto;
+    margin-top: 5px auto;
+    width: 75%;
+
+}
